@@ -20,7 +20,8 @@ body {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {
@@ -41,13 +42,24 @@ a:hover {
 }
 
 .main {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
 .container {
   width: 90%;
   margin: auto;
+}
+
+.headings h2, .fringila h2 {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.headings h2 h2 + p, .fringila h2 h2 + p {
+  text-transform: uppercase;
+  font-size: .9rem;
+  color: red;
 }
 
 /*********
@@ -76,5 +88,63 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 0 10px;
+}
+
+/*********
+header
+**********/
+header {
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+header p {
+  color: #d1d0c4;
+}
+
+/*********
+mainHeader
+**********/
+.main {
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
+}
+
+.mainHeader {
+  background-image: url(../img/pic02.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+/*********
+fringila
+**********/
+.fringila {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+/***********
+text
+************/
+.text {
+  padding: 50px 0;
+  background-color: #d1d0c4;
+  color: #1e1f23;
+}
+
+.text p {
+  font-size: .9rem;
 }
 /*# sourceMappingURL=style.css.map */

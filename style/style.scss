@@ -7,6 +7,7 @@ $colorText1: #d1d0c4;
 $colorGray: #f6f5f5;
 $colorDarkGray: #1e1f23;
 $transition: 0.4s ease;
+$padding: 50px 0;
 
 /*********
 mixins
@@ -15,7 +16,16 @@ mixins
     height: $height;
     background-position: center;
     background-size: cover;
-    repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@mixin line {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: red;
+    margin: 30px auto;
 }
 
 /*********
@@ -47,14 +57,25 @@ a {
     }
 }
 .main {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .container {
     width: 90%;
     margin: auto;
 }
-
+.headings {
+    h2 {
+        font-size: 1.5rem;
+        color: red;
+   
+    h2 + p {
+        text-transform: uppercase;
+        font-size: .9rem;
+        color: red;
+    }
+}
+}
 /*********
 navigation
 **********/
@@ -73,4 +94,54 @@ nav {
         display: inline-block;
         padding: 0 10px;
     }
+}
+
+/*********
+header
+**********/
+header {
+    padding: $padding;
+    color: $colorWhite;
+    text-align: center;
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    p {
+        color: $colorText1;
+    }
+}
+/*********
+mainHeader
+**********/
+.main {
+    box-shadow: 0 0 50px black;
+}
+.mainHeader {
+    background-image: url(../img/pic02.jpg);
+    @include imgBg(60vh);
+    background-attachment: scroll;  
+}
+
+/*********
+fringila
+**********/
+.fringila {
+    padding: $padding;
+    text-align: center;
+    background-color: $colorWhite;
+    @extend .headings;
+    
+}
+/***********
+text
+************/
+.text {
+    padding: $padding;
+    background-color: $colorText1;
+    color: $colorDarkGray;
+    p {
+        font-size: .9rem;
+    }
+
 }
