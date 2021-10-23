@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/*********
+mixins
+**********/
+/*********
+basic-style
+**********/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-image: url(../img/bg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  repeat: no-repeat;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1e1f23;
+}
+
+a:hover {
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: #fff;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/*********
+navigation
+**********/
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 208, 196, 0.1)), to(rgba(246, 245, 245, 0.1)));
+  background: linear-gradient(rgba(209, 208, 196, 0.1), rgba(246, 245, 245, 0.1));
+  margin: 50px 0;
+  padding: 10px;
+}
+
+nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
