@@ -19,14 +19,15 @@ mixins
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-@mixin line {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background: red;
-    margin: 30px auto;
+hr {
+   display: block;
+   content: "";
+   height: 1px;
+   width: 15%;
+   background: $colorText1;
+   margin: 20px auto;
 }
+
 
 /*********
 basic-style
@@ -64,17 +65,8 @@ a {
     width: 90%;
     margin: auto;
 }
-.headings {
-    h2 {
-        font-size: 1.5rem;
-        color: red;
-   
-    h2 + p {
-        text-transform: uppercase;
-        font-size: .9rem;
-        color: red;
-    }
-}
+h2 {
+    font-size: 1.5rem;
 }
 /*********
 navigation
@@ -130,8 +122,13 @@ fringila
     padding: $padding;
     text-align: center;
     background-color: $colorWhite;
-    @extend .headings;
-    
+    hr {
+        background-color: red;
+    }
+    p {
+        color: $colorText1;
+        font-size: .9rem;
+    }
 }
 /***********
 text

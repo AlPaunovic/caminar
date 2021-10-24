@@ -2,6 +2,15 @@
 /*********
 mixins
 **********/
+hr {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 15%;
+  background: #d1d0c4;
+  margin: 20px auto;
+}
+
 /*********
 basic-style
 **********/
@@ -51,15 +60,8 @@ a:hover {
   margin: auto;
 }
 
-.headings h2, .fringila h2 {
+h2 {
   font-size: 1.5rem;
-  color: red;
-}
-
-.headings h2 h2 + p, .fringila h2 h2 + p {
-  text-transform: uppercase;
-  font-size: .9rem;
-  color: red;
 }
 
 /*********
@@ -133,6 +135,15 @@ fringila
   padding: 50px 0;
   text-align: center;
   background-color: #fff;
+}
+
+.fringila hr {
+  background-color: red;
+}
+
+.fringila p {
+  color: #d1d0c4;
+  font-size: .9rem;
 }
 
 /***********
