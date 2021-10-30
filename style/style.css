@@ -264,4 +264,40 @@ vivvera
 .vivvera .container #textBlack h2 {
   color: #1e1f23;
 }
+
+/**********
+footer
+***********/
+footer {
+  padding: 50px 0;
+  text-align: center;
+  color: #d1d0c4;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: #f6f5f5;
+  margin: 0 10px;
+}
+
+footer i:hover {
+  color: #fff;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer p {
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+footer p a {
+  color: #fff;
+}
+
+footer p a:hover {
+  color: gray;
+}
 /*# sourceMappingURL=style.css.map */

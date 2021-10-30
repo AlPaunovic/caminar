@@ -213,3 +213,34 @@ vivvera
         }
     }
 }
+
+/**********
+footer
+***********/
+
+footer {
+    padding: $padding;
+    text-align: center;
+    color: $colorText1;
+        i {
+        font-size: 1.5rem;
+        color: $colorGray;
+        margin: 0 10px;
+        &:hover {
+            color: $colorWhite;
+            transform: rotate(360deg);
+            transition: 1s;
+    }
+}
+p {
+    font-weight: 300;
+    margin-top: 20px;
+    a {
+        color: $colorWhite;
+        &:hover {
+            color: gray;
+        }
+    }
+}
+
+}
