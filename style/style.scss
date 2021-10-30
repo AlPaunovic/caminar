@@ -64,6 +64,9 @@ a {
 .container {
     width: 90%;
     margin: auto;
+    @media(max-width: 767px) {
+        width: 95%;
+    }
 }
 h2 {
     font-size: 1.5rem;
@@ -85,7 +88,16 @@ nav {
     li {
         display: inline-block;
         padding: 0 10px;
+        @media(max-width: 767px) {
+            padding: 0 5px;
+        }
     }
+    a {
+        @media(max-width: 767px) {
+        font-size: .8rem;
+        }
+    }
+    
 }
 
 /*********
@@ -98,6 +110,9 @@ header {
     h1 {
         font-size: 4rem;
         font-weight: 700;
+        @media(max-width: 767px) {
+            font-size: 3rem;
+        }
     }
     p {
         color: $colorText1;
@@ -123,11 +138,14 @@ fringila
     text-align: center;
     background-color: $colorWhite;
     hr {
-        background-color: red;
+        background-color: $colorDarkGray;
     }
     p {
         color: $colorText1;
         font-size: .9rem;
+        @media(max-width: 767px) {
+            font-size: .8rem;
+        }
     }
 }
 /***********
@@ -139,6 +157,10 @@ text
     color: $colorDarkGray;
     p {
         font-size: .9rem;
+        @media(max-width: 767px) {
+            font-size: .8rem;
+        }
+    
     }
 }
 /***********
@@ -166,7 +188,11 @@ gallery
         div {
             flex: 0 0 48%;
             margin-top: 30px;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+            }
         }
+        
     }
 }
 
@@ -187,6 +213,11 @@ vivvera
         }
         article {
             flex: 0 0 50%;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+                margin-bottom: 15px;
+            }
+            
         }
         h2 {
             margin-bottom: 30px;
@@ -235,6 +266,9 @@ footer {
 p {
     font-weight: 300;
     margin-top: 20px;
+    @media(max-width: 767px) {
+        font-size: .8rem;
+    }
     a {
         color: $colorWhite;
         &:hover {

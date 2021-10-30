@@ -60,6 +60,12 @@ a:hover {
   margin: auto;
 }
 
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+}
+
 h2 {
   font-size: 1.5rem;
 }
@@ -92,6 +98,18 @@ nav li {
   padding: 0 10px;
 }
 
+@media (max-width: 767px) {
+  nav li {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav a {
+    font-size: .8rem;
+  }
+}
+
 /*********
 header
 **********/
@@ -104,6 +122,12 @@ header {
 header h1 {
   font-size: 4rem;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 3rem;
+  }
 }
 
 header p {
@@ -138,12 +162,18 @@ fringila
 }
 
 .fringila hr {
-  background-color: red;
+  background-color: #1e1f23;
 }
 
 .fringila p {
   color: #d1d0c4;
   font-size: .9rem;
+}
+
+@media (max-width: 767px) {
+  .fringila p {
+    font-size: .8rem;
+  }
 }
 
 /***********
@@ -157,6 +187,12 @@ text
 
 .text p {
   font-size: .9rem;
+}
+
+@media (max-width: 767px) {
+  .text p {
+    font-size: .8rem;
+  }
 }
 
 /***********
@@ -200,6 +236,14 @@ gallery
   margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+  .gallery .container div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 /**********
 vivvera
 ***********/
@@ -229,6 +273,15 @@ vivvera
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+}
+
+@media (max-width: 767px) {
+  .vivvera .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .vivvera .container h2 {
@@ -291,6 +344,12 @@ footer i:hover {
 footer p {
   font-weight: 300;
   margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  footer p {
+    font-size: .8rem;
+  }
 }
 
 footer p a {
